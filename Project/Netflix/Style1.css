@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Container {
+    background-image: url("./bg.jpg");
+    width: 100vw;
+    height: 644px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    filter: brightness(50%);
+   background-position: inherit;
+  }
+  .extra{
+    width: 100vw;
+    height: 644px;
+    background-color: black;
+  }
+  .Navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    padding: 12px;
+    flex-wrap: wrap;
+  }
+ 
+
+  .Navbar div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .Navbar button {
+    margin-left: 30px;
+  }
+  #butt1{
+    width: 80px;
+    height: 30px;
+  }
+  #butt2{
+    width: 80px;
+    height: 35px;
+    background-color: red;
+  }
+  .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    color: hsl(0, 0%, 100%);
+    margin: 50px 0 0 0;
+  }
+ 
+  .content :nth-child(1){
+    font-size: 60px;
+    font-weight:bold;
+    text-shadow: 1px 5px 3px blueviolet
+  }
+  .content :nth-child(2){
+    font-size: 60px;
+    font-weight:bold;
+   color: rgb(251, 253, 251);
+    margin: 0 0 40px 0;
+    text-shadow: 1px 5px 3px blueviolet
+  }
+  .content :nth-child(3){
+    padding: 10px;
+    font-weight: bolder;
+    color: rgb(240, 248, 255);
+  }
+ input{
+    width: 250px;
+    height: 30px;
+ }
+ #red{
+    background-color: red;
+    padding: 4px;
+    height: 35px;
+    width: 135px;
+    margin: 8px;
+    color: rgb(88, 240, 42);
+    font-weight: 400;
+    cursor: pointer;
+ }
+
+  .outline{
+  background-color: aquamarine;
+    height: 4px;
+
+  }
+  .container2{
+    background-image: url("./Netflix2.jpg.jpg");
+    background-repeat:repeat-y;
+   background-size: inherit;
+    background-size: max(1200px, 100vw);
+    filter: brightness(50%);
+    display: flex;
+    flex-direction: column;
+    align-items:self-start;
+    padding: 30px 0 0 110px;
+  }
+.container2 >div{
+    color: white;
+    font-size:40px ;
+    padding: 0px;
+    text-shadow: 2px 3px 4px red;
+}
+.container2 button{
+    margin:0 0 0 10px;
+    width:100px;
+    height: 40px;
+    background-color: rgb(13, 237, 162);
+    color: white;
+    font-weight: bolder;
+}
+.card{
+ display: flex;
+ flex-flow: wrap;
+  margin: 10px;
+}
+.same {
+  margin: 15px;
+  transform: scale(1);
+  cursor: pointer;
+  transition: all;
+  transition: all;
+  transition-duration: 1s;
+  transition-timing-function:ease;
+  transition-property: inherit;
+ 
+}
+.same:hover{
+  transform: scale(1.4);
+}
+.same img{
+  box-shadow:  5px 5px 4px #d3d7ca;
+border-radius: 20px;
+position:relative;
+z-index: -10;
+}
+.info{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info span{ 
+  margin: 50px;
+  color: white;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.info div button{
+  display: flex;
+  justify-content:space-between;
+  padding: 10px;
+  width: 90vw;
+  margin: 6px;
+  color:white;
+  cursor: pointer;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(45, 51, 51);
+} 
+.info div button:hover{
+  background-color: rgb(65, 84, 77);
+}
+  
+@media screen and (max-width: 450px) {
+.content:nth-child(1){
+  font-size: 30px;
+}
+.container2 >div{
+  color: white;
+  font-size:40px ;
+  position: relative;
+  right: 80px;
+}
+.Navbar{
+  display: flex;
+  flex-flow: row wrap;
+}
+  .Navbar img{
+    width:70px ;
+  }
+  #butt1{
+    width: 60px;
+    height: 25px;
+  }
+  #butt2{
+    width: 60px;
+    height: 25px;
+  }
+  .Navbar button {
+    margin-left: 10px;
+  }
+ 
+  .same img{
+    width: 70vw;
+    height: 45vh;
+    box-shadow:  5px 5px 4px #d3d7ca;
+  }
+  .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   z-index:100;
+  }
+  .info span{
+    margin: 5px;
+  }
+  
+}

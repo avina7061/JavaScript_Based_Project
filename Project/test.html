@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .calculator {
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .same {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(105, 104, 102);
+        }
+
+        .item1 {
+            grid-column: 1 / 4; /* Span across first 3 columns */
+            background-color: blanchedalmond;
+            /* Ensure this item is the same height as others */
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <div class="item1">Item 1</div>
+        <div class="same">2</div>
+        <div class="same">3</div>
+        <div class="same">4</div>
+        <div class="same">5</div>
+        <div class="same">6</div>
+        <div class="same">7</div>
+    </div>
+</body>
+</html>
